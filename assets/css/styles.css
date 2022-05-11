@@ -1,120 +1,174 @@
-
 *{
     margin: 0px;
     padding: 0px;
 }
 
 body{
-    background-image: url(/assets/images/bgd.f7687446.png);
-    background-color: #fff;    
-    width:100%;
-    height: 100vh;
 
+    color: rgb(255,127,191);
+    font-size: 20px;
+    font-weight: bolder;
+    background-image: url(../images/bgd.f7687446.png);
+    background-color: #fff;
 }
 
-nav{
-    background-color: rgb(255,236,245);
-    padding: 5rem;
-    height: 10rem;
+.nav{
+    height: 100px;
     width: 100%;
+    justify-items: center;
+    background-color: rgb(255,236,245);
 }
 
-.nav-image{
-    height: 70px;
-    width: 70px;
-    padding: auto;
-    margin: 0rem 9rem;
-}
+.nav a img{
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    margin: 20px 50px 0px 200px;
 
-.navl{
-    justify-content: space-between;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: xx-large;
-    text-transform: uppercase;
 }
-.navv{
+.container{
     display: flex;
 }
 
-.navv .home{
-    border-bottom: 5px solid rgb(255,127,191);
-
+.space{
+    flex-basis: 8.33%;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.list{
+    justify-content: center;
+    margin-top: 36px;
 }
 
-.navv .about{
-    opacity:0.5 !important;
-}
-
-.about:hover{
-    opacity: 0;
-    border-bottom: 5px solid rgb(235, 81, 158);
-    color:rgb(235, 81, 158);
-
-}
-
-.navv li a{
-  color:rgb(255,127,191) !important;
-}
-
-.con{
-    margin: 0rem 5rem;
-    border: 1px solid rgb(255,127,191);
-    border-radius: 50px;
-    background-color: rgb(255,127,191);
-}
-
-.con  a{
-    color: #fff !important;
-    padding-top: 1rem !important;
-    padding-left: 2rem  !important;
-    padding-right: 2rem  !important;
-
-}
-
-.text-primary{
-    color:rgb(255,127,191) !important;
-    font-family: 'Bebas Neue', cursive;
-}
-.marketplace .open{
-    padding: 1rem 5rem;
+.list a{
+    margin: 40px ;
+    justify-content: center;
     text-decoration: none;
+    list-style-type: none;
     text-transform: uppercase;
-    border: 2px solid rgb(255,127,191) ;
-    border-radius: 50px;
-    background-color: rgb(255,127,191)  ;
-    color: #fff !important;
+    font-size: 20px;
+    color: rgb(255,127,191);
+    opacity: 0.5;
 }
 
-.marketplace .look{
-    padding: 1rem 5rem;
+.list a:hover{
+    border-bottom: 2px solid rgb(255,127,191);
+    padding: auto;
+    width: 100%;
+    transition: 1s ease-in-out;
+    opacity: 1;
+    color: rgb(255,127,191);
+}
+.space2{
+    flex-basis: 8.33%;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.btn{
+    padding: 10px 50px;
+    margin: 22px;
+    border: none;
+    border-radius: 50px;
+    background-color:rgb(255,127,191);
+    color: #fff;
+    font-size: 24px;
+    font-family: TuttiFrutti !important;
+    cursor: pointer;
+}
+.svgs{
+    margin-top: 35px;
+    padding: 0px 20px;
+}
+.svgs a{
+    padding: 0px 10px;
     text-decoration: none;
-    text-transform: uppercase;
-    border: 2px solid rgb(255,127,191) ;
-    border-radius: 50px;
-    color: rgb(255,127,191) !important;
+    width: 20px;
+   opacity: 0.5;
 }
 
-.slider{
-    
+.svgs a:hover{
+    opacity: 1;
+}
+.row{
+    justify-content: center;
+    color: rgb(255,127,191);
+
+}
+
+.text{
+    justify-content: center;
+    font-size: 50px;
+    color:rgb(255,127,191) ;
+
+}
+
+.text h1{
+    justify-content: center;
+    margin-top: 50px;
+    margin-left:400px ;
+}
+
+.row .text h1{
+    justify-content: center;
+}
+.eth{
+    justify-content: center;
+
+}
+
+.eth p{
+    font-size: 20px;
+    margin-left: 425px;
+    font-weight: bolder;
+    color: rgb(228, 107, 157);
+}
+.text-p{
+    color: rgb(101, 107, 114);
+    font-size: 15px;
+    margin-left: 470px;
+    margin-top: 20px;
+}
+.marketplace{
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 413px;
+    margin-top: 20px;
+}
+
+.marketplace a{
+    margin-left: 20px;
+    padding-left:  56px;
+   padding-right: 58px;
+   padding-bottom: 8px;
+   padding-top: 10px;
+    border: 2px solid rgb(228, 107, 157);
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.scroller{
+    overflow:hidden ;
+    width: 100%;
+}
+
+.scroller img{
     overflow: hidden;
-
-}
-
-
-.iimgg{
-    width:auto;
+    
     height: 200px;
     position: fixed;
     bottom: 0px;
-    animation: 100s linear 0s infinite normal none running slider;
+    animation: slider 100s linear infinite;
 }
-    
+
 @keyframes slider{
     100% {
         transform: translateX(-66.6666%);
     }
 }
 
-.fs-6{
-    font-size: 120px !important;
-}

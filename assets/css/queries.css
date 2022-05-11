@@ -1,0 +1,72 @@
+@media only screen and (max-width: 1200px) {
+     .svgs{
+         display: flex;
+     }
+
+     .list{
+         margin: auto;
+         display: flex;
+     }
+}
+
+@media only screen and (max-width: 992px){
+
+    .svgs{
+        display: flex;
+    }
+     .nav a img{
+         margin-left: 16px;
+     }
+     .row{
+         margin-left: -112px;
+     }
+}
+
+@media only screen and (max-width: 800px){
+
+    .container{
+        display: none;
+    }
+    .text h1{
+
+    }
+    
+    .row .text h1{
+                margin-left: 343px;
+    }
+    .eth p{
+        margin-left: 368px;
+    }
+    .text-p{
+        margin-left: 429px;
+    }
+    .marketplace{
+        margin-left: 313px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .row .text h1{
+        margin-left: 180px;
+        font-size: 42px;
+    }
+    .eth p{
+        margin-left: 140px;
+    display: flex;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.text-p{
+    display: flex;
+    font-size: 10px;
+    margin-left: 163px;
+
+}
+.marketplace{
+    display: block;
+    margin-left: 129px;
+    margin-top: 20px;
+}
+.row .marketplace a{
+margin-bottom: 20px;
+}
+}
