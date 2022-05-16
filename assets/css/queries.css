@@ -62,11 +62,104 @@
 
 }
 .marketplace{
-    display: block;
+    display: grid;
     margin-left: 129px;
     margin-top: 20px;
 }
 .row .marketplace a{
 margin-bottom: 20px;
 }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .container{
+        display: none;
+    }
+    .text h1{
+font-size: 69px;
+    }
+    
+    .row .text h1{
+                margin-left: 405px;
+                margin-top: -15px;
+    }
+    .eth p{
+        margin-left: 368px;
+    }
+    .text-p{
+        margin-left: 429px;
+    }
+    .marketplace{
+        margin-left: 313px;
+    }
+    .scroller img {
+        overflow: hidden;
+        height: 139px;
+        position: fixed;
+        bottom: 0px;
+        animation: slider 100s linear infinite;
+    }
+}
+
+@media screen and(max-width: 480px){
+    .row .text h1{
+        margin-left: 157px;
+        font-size: 68px;
+    }
+    .eth p{
+        margin-left: 140px;
+    display: flex;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.text-p{
+    display: flex;
+    font-size: 26px;
+    margin-left: 151px;
+
+}
+.marketplace{
+    display: grid;
+    margin-left: 53px;
+    margin-top: 175px;
+}
+}
+.row .marketplace a{
+margin-bottom: 20px;
+
+}
+
+@media screen and (min-width: 312px) and (max-width: 320px){
+    .row .text h1{
+        margin-left: 157px;
+        font-size: 37px;
+    }
+    .eth p{
+        margin-left: 140px;
+    display: flex;
+    font-size: 10px;
+    margin-top: 10px;
+}
+.text-p{
+    display: flex;
+    font-size: 9px;
+    margin-left: 151px;
+
+}
+.marketplace{
+    display: grid;
+    margin-left: 63px;
+    margin-top: 40px;
+}
+.scroller img {
+    overflow: hidden;
+    height: 147px;
+    position: fixed;
+    bottom: 0px;
+    animation: slider 100s linear infinite;
+}
+}
+.row .marketplace a{
+margin-bottom: 20px;
+
 }
